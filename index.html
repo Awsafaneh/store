@@ -3,31 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>مؤسسة رواد الأردن التجارية - الإنارة والتوريدات الكهربائية</title>
+    <meta name="description" content="مؤسسة رواد الأردن التجارية: حلول متكاملة للإنارة والتوريدات الكهربائية في الأردن. وكلاء إنارة Infinity Lighting. جودة، ابتكار، وثقة.">
+    <meta name="keywords" content="إنارة الأردن, توريدات كهربائية, Infinity Lighting, إنارة صناعية, إنارة تجارية, كوابل كهرباء, كهرباء الأردن, رواد الأردن, حلول إنارة, مقاولات كهربائية">
+    <meta name="author" content="مؤسسة رواد الأردن التجارية">
+    <meta property="og:title" content="مؤسسة رواد الأردن التجارية - إنارة وتوريدات كهربائية متكاملة">
+    <meta property="og:description" content="اكتشف حلولنا المبتكرة في الإنارة والتوريدات الكهربائية. جودة عالمية وخدمة محلية في الأردن.">
+    <meta property="og:image" content="https://yourwebsite.com/inf.jpg"> <meta property="og:url" content="https://yourwebsite.com/index.html"> <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="مؤسسة رواد الأردن التجارية">
+    <meta name="twitter:description" content="شريكك الموثوق في الإنارة والتوريدات الكهربائية بأحدث التقنيات وأعلى معايير الجودة.">
+    <meta name="twitter:image" content="https://yourwebsite.com/inf.jpg"> <title>مؤسسة رواد الأردن التجارية - إنارة وتوريدات كهربائية متكاملة</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="canonical" href="https://yourwebsite.com/index.html"> </head>
 <body>
     <header class="header">
         <div class="nav-container">
             <div class="logo">
-                <img src="inf.jpg" alt="Infinity Lighting Logo" class="logo-img">
+                <img src="inf.jpg" alt="Infinity Lighting Logo" class="logo-img" aria-label="شعار مؤسسة رواد الأردن التجارية">
                 <div class="logo-text">رواد الأردن التجارية</div>
             </div>
-            <nav>
+            <nav aria-label="قائمة التنقل الرئيسية">
                 <ul class="nav-menu" id="navMenu">
-                    <li><a href="index.html" class="nav-link">الرئيسية</a></li>
+                    <li><a href="index.html" class="nav-link" aria-current="page">الرئيسية</a></li>
                     <li><a href="products.html" class="nav-link">منتجاتنا</a></li>
                     <li><a href="catalog.html" class="nav-link">الكاتالوج</a></li>
                     <li><a href="contact.html" class="nav-link">اتصل بنا</a></li>
                 </ul>
             </nav>
             <div style="display: flex; align-items: center; gap: 1rem;">
-                <button class="theme-toggle" onclick="toggleTheme()" id="themeToggle">
+                <button class="theme-toggle" onclick="toggleTheme()" id="themeToggle" aria-label="تبديل الوضع الليلي/النهاري">
                     <i class="fas fa-moon"></i>
                 </button>
-                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="تبديل قائمة التنقل للجوال">
                     <i class="fas fa-bars"></i>
                 </button>
             </div>
@@ -35,65 +43,238 @@
     </header>
 
     <main class="main-content">
-        <section id="home" class="section active fade-in">
+        <section id="home" class="section active fade-in" role="banner">
             <div class="hero">
                 <div class="hero-content">
-                    <h1>مؤسسة رواد الأردن التجارية</h1>
-                    <p>شركة رائدة في مجال الإنارة والتوريدات الكهربائية</p>
-                    <p>وكلاء معتمدون لإنارة Infinity Lighting بجودة عالمية</p>
-                    <a href="products.html" class="cta-button">
-                        <i class="fas fa-eye"></i> اكتشف منتجاتنا
-                    </a>
+                    <h1>مستقبل الإنارة والتوريدات الكهربائية في الأردن يبدأ هنا</h1>
+                    <p class="hero-subtext">
+                        مؤسسة رواد الأردن التجارية: شريككم الموثوق في تقديم حلول متكاملة ومبتكرة، من إنارة Infinity Lighting العصرية إلى أحدث التوريدات الكهربائية. التزامنا بالجودة والتميز يضيء طريق نجاحكم.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="products.html" class="cta-button" aria-label="استكشف منتجاتنا المتنوعة">
+                            <i class="fas fa-lightbulb"></i> استكشف منتجاتنا الآن
+                        </a>
+                        <a href="contact.html" class="cta-button secondary-cta" aria-label="تواصل مع فريق المبيعات لدينا">
+                            <i class="fas fa-phone-alt"></i> اطلب استشارة مجانية
+                        </a>
+                    </div>
+                    <div class="hero-features">
+                        <div class="feature-item">
+                            <i class="fas fa-award"></i>
+                            <p>جودة عالمية معتمدة</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-chart-line"></i>
+                            <p>حلول موفرة للطاقة</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-users-cog"></i>
+                            <p>فريق دعم متخصص</p>
+                        </div>
+                    </div>
                 </div>
             </div>
+
             <div class="container">
+                <h2 class="section-title">من نحن: قصة التزام وتميز</h2>
+                <div class="about-grid">
+                    <div class="about-text-content">
+                        <p class="lead-paragraph">
+                            تأسست مؤسسة رواد الأردن التجارية على مبادئ الابتكار، الجودة، والموثوقية، لتكون رائدة في قطاع الإنارة والتوريدات الكهربائية في المملكة الأردنية الهاشمية. منذ انطلاقنا، عملنا جاهدين لبناء سمعة تقوم على الثقة وتقديم أفضل المنتجات والخدمات لعملائنا.
+                        </p>
+                        <h3>رسالتنا</h3>
+                        <p>
+                            تتمثل رسالتنا في تزويد السوق الأردني بأحدث وأفضل حلول الإنارة والتوريدات الكهربائية التي تلبي أعلى المعايير العالمية من حيث الأداء، الكفاءة، والسلامة. نسعى لدعم مشاريعكم بالبنية التحتية الكهربائية الأمثل والإنارة التي تحدث فرقاً.
+                        </p>
+                        <h3>رؤيتنا</h3>
+                        <p>
+                            أن نكون الخيار الأول والشركة المرجعية في مجالنا، من خلال تبني أحدث التقنيات وتوسيع نطاق خدماتنا لخدمة أوسع شريحة من العملاء، والمساهمة في بناء مستقبل مستدام ومضيء للأردن.
+                        </p>
+                        <h3>قيمنا الأساسية</h3>
+                        <ul class="values-list">
+                            <li><i class="fas fa-check-circle"></i> **الجودة:** لا نساوم على جودة منتجاتنا وخدماتنا.</li>
+                            <li><i class="fas fa-lightbulb"></i> **الابتكار:** نسعى دائماً لتقديم حلول جديدة ومبتكرة.</li>
+                            <li><i class="fas fa-handshake"></i> **الموثوقية:** نلتزم بوعودنا ونقدم دعماً لا مثيل له.</li>
+                            <li><i class="fas fa-users"></i> **رضا العملاء:** نسعى لتجاوز توقعات عملائنا في كل تعامل.</li>
+                            <li><i class="fas fa-leaf"></i> **الاستدامة:** نركز على الحلول الصديقة للبيئة والموفرة للطاقة.</li>
+                        </ul>
+                    </div>
+                    <div class="about-image">
+                        <img src="https://via.placeholder.com/600x400?text=About+Us+Image" alt="فريق عمل مؤسسة رواد الأردن" loading="lazy">
+                        <p class="image-caption">فريقنا من المهندسين والفنيين جاهز لخدمتكم.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container services-overview-section">
                 <h2 class="section-title">خدماتنا المتميزة وحلولنا المتكاملة</h2>
+                <p class="section-description">
+                    في مؤسسة رواد الأردن التجارية، نقدم باقة متكاملة من الخدمات المصممة لتلبية كافة احتياجاتكم في مجالي الإنارة والتوريدات الكهربائية.
+                </p>
                 <div class="products-grid">
                     <div class="product-card">
-                        <div class="product-icon">
-                            <i class="fas fa-lightbulb"></i>
-                        </div>
-                        <h3>حلول الإنارة المبتكرة</h3>
-                        <p>نقدم أحدث وأذكى حلول الإنارة العصرية والموفرة للطاقة، لتناسب جميع المساحات الداخلية والخارجية، مع التركيز على الكفاءة والتصميم الجذاب.</p>
+                        <div class="product-icon"><i class="fas fa-lightbulb"></i></div>
+                        <h3>حلول الإنارة الذكية</h3>
+                        <p>نقدم أنظمة إنارة ذكية وموفرة للطاقة للمنازل، المكاتب، والمساحات الخارجية. تصاميم عصرية وتقنيات متطورة تضمن إضاءة مثالية بأقل تكلفة تشغيلية.</p>
+                        <details>
+                            <summary class="details-summary">المزيد من التفاصيل</summary>
+                            <div class="details-content">
+                                <ul>
+                                    <li>إنارة LED موفرة للطاقة لجميع التطبيقات.</li>
+                                    <li>أنظمة تحكم ذكية بالإضاءة (Smart Lighting Systems).</li>
+                                    <li>تصميم وتوزيع إضاءة احترافي للمشاريع.</li>
+                                    <li>استشارات فنية لاختيار الحل الأمثل.</li>
+                                </ul>
+                            </div>
+                        </details>
                     </div>
                     <div class="product-card">
-                        <div class="product-icon">
-                            <i class="fas fa-plug"></i>
-                        </div>
-                        <h3>توريدات كهربائية عالية الجودة</h3>
-                        <p>نوفر مجموعة شاملة من التوريدات الكهربائية ومواد البناء الكهربائية من أفضل الماركات العالمية، لضمان أعلى مستويات الأمان والجودة في مشاريعكم.</p>
+                        <div class="product-icon"><i class="fas fa-plug"></i></div>
+                        <h3>توريدات كهربائية شاملة</h3>
+                        <p>تغطية شاملة لجميع احتياجاتكم من الكابلات، الأسلاك، المفاتيح، المقابس، لوحات التوزيع، والمعدات الكهربائية الأخرى من علامات تجارية موثوقة.</p>
+                        <details>
+                            <summary class="details-summary">المزيد من التفاصيل</summary>
+                            <div class="details-content">
+                                <ul>
+                                    <li>كابلات وأسلاك كهربائية بمعايير عالمية.</li>
+                                    <li>مفاتيح ومقابس كهربائية بتصاميم متعددة.</li>
+                                    <li>قواطع دوائر كهربائية وأنظمة حماية.</li>
+                                    <li>لوحات توزيع كهربائية مخصصة.</li>
+                                </ul>
+                            </div>
+                        </details>
                     </div>
                     <div class="product-card">
-                        <div class="product-icon">
-                            <i class="fas fa-tools"></i>
-                        </div>
-                        <h3>تركيب وصيانة احترافية</h3>
-                        <p>فريقنا من الفنيين والمهندسين المتخصصين يقدم خدمات تركيب وصيانة دقيقة وموثوقة، لضمان الأداء الأمثل وطول عمر أنظمتكم الكهربائية.</p>
+                        <div class="product-icon"><i class="fas fa-tools"></i></div>
+                        <h3>تركيب وصيانة متخصصة</h3>
+                        <p>فريق من المهندسين والفنيين المؤهلين لتقديم خدمات تركيب دقيقة وصيانة دورية لأنظمتكم الكهربائية، لضمان أعلى مستويات الأداء والسلامة.</p>
+                        <details>
+                            <summary class="details-summary">المزيد من التفاصيل</summary>
+                            <div class="details-content">
+                                <ul>
+                                    <li>تركيب أنظمة إنارة داخلية وخارجية.</li>
+                                    <li>تمديدات كهربائية للمباني السكنية والتجارية.</li>
+                                    <li>صيانة وقائية وإصلاحات فورية.</li>
+                                    <li>فحص واختبار الأنظمة الكهربائية.</li>
+                                </ul>
+                            </div>
+                        </details>
                     </div>
                     <div class="product-card">
-                        <div class="product-icon">
-                            <i class="fas fa-industry"></i>
-                        </div>
-                        <h3>خدمات استشارية للمشاريع</h3>
-                        <p>نقدم استشارات فنية متخصصة وحلول إنارة وتوريدات كهربائية متكاملة للمشاريع الكبرى، بدءاً من دراسة الجدوى والتصميم وحتى التنفيذ والإشراف.</p>
+                        <div class="product-icon"><i class="fas fa-industry"></i></div>
+                        <h3>حلول متكاملة للمشاريع</h3>
+                        <p>من الفكرة الأولية إلى التنفيذ، نقدم دعماً كاملاً للمشاريع الصناعية والتجارية، بما في ذلك التصميم، التخطيط، والتوريد، والإشراف الهندسي.</p>
+                        <details>
+                            <summary class="details-summary">المزيد من التفاصيل</summary>
+                            <div class="details-content">
+                                <ul>
+                                    <li>دراسات جدوى وتصاميم هندسية.</li>
+                                    <li>إدارة مشاريع الإنارة والتوريدات.</li>
+                                    <li>توفير مواد عالية الجودة للمشاريع الكبيرة.</li>
+                                    <li>دعم فني مستمر بعد التنفيذ.</li>
+                                </ul>
+                            </div>
+                        </details>
                     </div>
                 </div>
+            </div>
 
-                <div style="text-align: center; margin-top: 5rem; padding-top: 3rem; border-top: 1px solid rgba(0,0,0,0.1);">
-                    <h2 class="section-title" style="margin-bottom: 2rem;">لماذا تختار رواد الأردن التجارية؟</h2>
-                    <p style="max-width: 800px; margin: 0 auto 2rem; font-size: 1.15rem; color: var(--dark-gray-text);">
-                        تتمثل رؤيتنا في أن نكون الشريك الموثوق به لجميع احتياجات الإنارة والتوريدات الكهربائية في الأردن والمنطقة. نلتزم بتقديم منتجات عالية الجودة وخدمات لا مثيل لها، مع التركيز على الابتكار والاستدامة ورضا العملاء. خبرتنا الواسعة وفريق عملنا المتخصص يضمن لك الحصول على أفضل الحلول التي تتجاوز توقعاتك.
-                    </p>
-                    <a href="contact.html" class="cta-button" style="font-size: 1.05rem;">
-                        <i class="fas fa-handshake"></i> تواصل معنا الآن
+            <div class="container testimonials-section">
+                <h2 class="section-title">ماذا يقول عملاؤنا عنا</h2>
+                <div class="testimonials-grid">
+                    <article class="testimonial-card">
+                        <div class="testimonial-header">
+                            <img src="https://via.placeholder.com/80x80?text=Client1" alt="صورة العميل أحمد محمود" class="client-avatar" loading="lazy">
+                            <div class="client-info">
+                                <h4>أحمد محمود</h4>
+                                <p>مدير مشاريع، شركة البناء الحديث</p>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">
+                            "مؤسسة رواد الأردن قدمت لنا حلول إنارة صناعية ممتازة لمصنعنا الجديد. الجودة كانت تفوق التوقعات، والفريق كان محترفاً جداً في التركيب والدعم. ننصح بهم بشدة لأي مشروع كبير."
+                        </p>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                    </article>
+                    <article class="testimonial-card">
+                        <div class="testimonial-header">
+                            <img src="https://via.placeholder.com/80x80?text=Client2" alt="صورة العميل فاطمة علي" class="client-avatar" loading="lazy">
+                            <div class="client-info">
+                                <h4>فاطمة علي</h4>
+                                <p>صاحبة بوتيك الأزياء "لمسة أناقة"</p>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">
+                            "أشكر فريق رواد الأردن على المساعدة في اختيار الإضاءة المثالية لبوتيكي. إضاءة Infinity Lighting أضافت لمسة جمالية وفخامة جعلت المنتجات تبدو أجمل بكثير. الخدمة كانت سريعة وممتازة."
+                        </p>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </article>
+                    <article class="testimonial-card">
+                        <div class="testimonial-header">
+                            <img src="https://via.placeholder.com/80x80?text=Client3" alt="صورة العميل محمد خالد" class="client-avatar" loading="lazy">
+                            <div class="client-info">
+                                <h4>محمد خالد</h4>
+                                <p>مهندس كهرباء مستقل</p>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">
+                            "اعتمادي الأول على رواد الأردن في التوريدات الكهربائية لمشروعي. لديهم مخزون كبير وتنوع في المنتجات، ودائماً ما أجد لديهم ما أحتاجه. أسعارهم تنافسية جداً وجودتهم لا تضاهى."
+                        </p>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <div class="container news-section">
+                <h2 class="section-title">آخر الأخبار والمقالات</h2>
+                <p class="section-description">
+                    ابقوا على اطلاع بأحدث التطورات في عالم الإنارة والتوريدات الكهربائية، وأخبار مؤسسة رواد الأردن التجارية، والمشاريع الجديدة.
+                </p>
+                <div class="news-grid">
+                    <article class="news-card">
+                        <img src="https://via.placeholder.com/400x250?text=News+1" alt="صورة خبر عن مشروع جديد" class="news-image" loading="lazy">
+                        <div class="news-content">
+                            <h3><a href="#" aria-label="عنوان الخبر الأول">افتتاح مشروع الإضاءة الذكية في المجمع التجاري الجديد</a></h3>
+                            <p class="news-meta"><i class="fas fa-calendar-alt"></i> 2025-05-24 | <i class="fas fa-tag"></i> مشاريع</p>
+                            <p class="news-excerpt">يسرنا الإعلان عن الانتهاء بنجاح من مشروع تركيب أنظمة الإضاءة الذكية في مجمع تجاري رائد بقلب العاصمة...</p>
+                            <a href="#" class="read-more" aria-label="اقرأ المزيد عن هذا الخبر">اقرأ المزيد <i class="fas fa-arrow-left"></i></a>
+                        </div>
+                    </article>
+                    <article class="news-card">
+                        <img src="https://via.placeholder.com/400x250?text=News+2" alt="صورة خبر عن منتج جديد" class="news-image" loading="lazy">
+                        <div class="news-content">
+                            <h3><a href="#" aria-label="عنوان الخبر الثاني">إطلاق الجيل الجديد من إنارة Infinity Lighting LED</a></h3>
+                            <p class="news-meta"><i class="fas fa-calendar-alt"></i> 2025-05-15 | <i class="fas fa-tag"></i> منتجات</p>
+                            <p class="news-excerpt">أعلنّا اليوم عن وصول تشكيلة جديدة ومحسّنة من منتجات Infinity Lighting LED التي تتميز بكفاءة أعلى وعمر أطول...</p>
+                            <a href="#" class="read-more" aria-label="اقرأ المزيد عن هذا المنتج">اقرأ المزيد <i class="fas fa-arrow-left"></i></a>
+                        </div>
+                    </article>
+                    <article class="news-card">
+                        <img src="https://via.placeholder.com/400x250?text=News+3" alt="صورة خبر عن شراكة" class="news-image" loading="lazy">
+                        <div class="news-content">
+                            <h3><a href="#" aria-label="عنوان الخبر الثالث">شراكة استراتيجية مع شركة عالمية للمعدات الكهربائية</a></h3>
+                            <p class="news-meta"><i class="fas fa-calendar-alt"></i> 2025-05-01 | <i class="fas fa-tag"></i> شراكات</p>
+                            <p class="news-excerpt">توسيعاً لشبكة توريداتنا، وقعنا اتفاقية شراكة استراتيجية مع إحدى الشركات العالمية الرائدة في مجال المعدات الكهربائية...</p>
+                            <a href="#" class="read-more" aria-label="اقرأ المزيد عن هذه الشراكة">اقرأ المزيد <i class="fas fa-arrow-left"></i></a>
+                        </div>
+                    </article>
+                </div>
+                <div style="text-align: center; margin-top: 3rem;">
+                    <a href="#" class="cta-button secondary-cta" aria-label="تصفح جميع الأخبار والمقالات">
+                        <i class="fas fa-newspaper"></i> عرض كل الأخبار
                     </a>
                 </div>
-
             </div>
+
         </section>
     </main>
 
-    <a href="https://wa.me/962791234567" class="whatsapp-btn" target="_blank" aria-label="WhatsApp Chat">
+    <a href="https://wa.me/962791234567" class="whatsapp-btn" target="_blank" aria-label="تواصل معنا عبر واتساب">
         <i class="fab fa-whatsapp"></i>
     </a>
 
@@ -102,29 +283,43 @@
             <div class="footer-section about">
                 <h3>مؤسسة رواد الأردن التجارية</h3>
                 <p>رواد في مجال الإنارة والتوريدات الكهربائية، نقدم حلولاً مبتكرة وعالية الجودة لعملائنا في الأردن والمنطقة. نلتزم بالتميز والجودة في كل ما نقدمه.</p>
+                <div class="company-mission">
+                    <p><i class="fas fa-bullseye"></i> **مهمتنا:** إضاءة المستقبل بأفضل حلول الإنارة وتأمين البنية الكهربائية الموثوقة.</p>
+                    <p><i class="fas fa-seedling"></i> **التزامنا:** بيئة عمل آمنة، منتجات مستدامة، وشراكات طويلة الأمد.</p>
+                </div>
             </div>
             <div class="footer-section contact-info-footer">
                 <h3>تواصل معنا</h3>
-                <p><i class="fas fa-map-marker-alt"></i> الأردن - الرجيب - شارع الأمراء</p>
-                <p><i class="fas fa-phone"></i> +962 6 123 4567</p>
-                <p><i class="fas fa-mobile-alt"></i> +962 79 123 4567</p>
-                <p><i class="fas fa-envelope"></i> info@rowad-jordan.com</p>
+                <address>
+                    <p><i class="fas fa-map-marker-alt"></i> الأردن - عمان - الرجيب - شارع الأمراء - مبنى رقم 25</p>
+                    <p><i class="fas fa-phone"></i> <strong>هاتف:</strong> <a href="tel:+96261234567" aria-label="رقم الهاتف الأرضي">+962 6 123 4567</a></p>
+                    <p><i class="fas fa-mobile-alt"></i> <strong>موبايل:</strong> <a href="tel:+962791234567" aria-label="رقم الهاتف المحمول">+962 79 123 4567</a></p>
+                    <p><i class="fas fa-envelope"></i> <strong>البريد الإلكتروني:</strong> <a href="mailto:info@rowad-jordan.com" aria-label="البريد الإلكتروني العام">info@rowad-jordan.com</a></p>
+                </address>
+                <p class="working-hours"><i class="fas fa-clock"></i> ساعات العمل: الأحد - الخميس، 9:00 صباحاً - 5:00 مساءً</p>
             </div>
             <div class="footer-section social-links-footer">
-                <h3>تابعنا</h3>
-                <div class="social-icons-footer">
-                    <a href="https://www.facebook.com/yourpage" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://www.instagram.com/yourpage" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/company/yourcompany" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="mailto:info@rowad-jordan.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                <h3>تابعنا على منصات التواصل الاجتماعي</h3>
+                <p>ابق على اطلاع دائم بآخر أخبارنا وعروضنا الخاصة من خلال متابعتنا:</p>
+                <div class="social-icons-footer" role="navigation" aria-label="روابط التواصل الاجتماعي">
+                    <a href="https://www.facebook.com/yourpage" target="_blank" rel="noopener noreferrer" aria-label="صفحتنا على فيسبوك"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/yourpage" target="_blank" rel="noopener noreferrer" aria-label="صفحتنا على انستغرام"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/company/yourcompany" target="_blank" rel="noopener noreferrer" aria-label="صفحتنا على لينكد إن"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="mailto:info@rowad-jordan.com" aria-label="إرسال بريد إلكتروني"><i class="fas fa-envelope"></i></a>
+                    <a href="https://wa.me/962791234567" target="_blank" rel="noopener noreferrer" aria-label="تواصل معنا عبر واتساب"><i class="fab fa-whatsapp"></i></a>
                 </div>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2025 مؤسسة رواد الأردن التجارية. جميع الحقوق محفوظة.</p>
+            <p>&copy; <span id="current-year"></span> مؤسسة رواد الأردن التجارية. جميع الحقوق محفوظة. <a href="#" class="footer-link">سياسة الخصوصية</a> | <a href="#" class="footer-link">شروط الاستخدام</a></p>
+            <p>تصميم وتطوير بواسطة [اسم شركتك / اسمك هنا]</p>
         </div>
     </footer>
 
     <script src="script.js"></script>
+    <script>
+        // Set current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
