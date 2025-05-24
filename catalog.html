@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الكاتالوج - مؤسسة رواد الأردن التجارية</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-lightbulb"></i>
+                </div>
+                <div class="logo-text">رواد الأردن التجارية</div>
+            </div>
+            <nav>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link">الرئيسية</a></li>
+                    <li><a href="products.html" class="nav-link">منتجاتنا</a></li>
+                    <li><a href="catalog.html" class="nav-link active">الكاتالوج</a></li>
+                    <li><a href="contact.html" class="nav-link">اتصل بنا</a></li>
+                </ul>
+            </nav>
+            <div style="display: flex; align-items: center; gap: 1rem;">
+                <button class="theme-toggle" onclick="toggleTheme()" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section id="catalog" class="section active fade-in">
+            <div class="container">
+                <h2 class="section-title">الكاتالوج</h2>
+                <div class="catalog-grid">
+                    <div class="catalog-item">
+                        <div class="product-icon">
+                            <i class="fas fa-file-pdf"></i>
+                        </div>
+                        <h3>كاتالوج الإنارة الصناعية</h3>
+                        <p>تصفح مجموعتنا الكاملة من منتجات الإنارة الصناعية</p>
+                        <a href="#" class="cta-button" style="margin-top: 1rem; font-size: 0.9rem;">
+                            <i class="fas fa-download"></i> تحميل PDF
+                        </a>
+                    </div>
+                    <div class="catalog-item">
+                        <div class="product-icon">
+                            <i class="fas fa-file-pdf"></i>
+                        </div>
+                        <h3>كاتالوج الإنارة التجارية</h3>
+                        <p>اكتشف حلول الإنارة المتنوعة للمشاريع التجارية</p>
+                        <a href="#" class="cta-button" style="margin-top: 1rem; font-size: 0.9rem;">
+                            <i class="fas fa-download"></i> تحميل PDF
+                        </a>
+                    </div>
+                    <div class="catalog-item">
+                        <div class="product-icon">
+                            <i class="fas fa-file-pdf"></i>
+                        </div>
+                        <h3>كاتالوج Infinity Lighting</h3>
+                        <p>الكاتالوج الرسمي لمنتجات Infinity Lighting</p>
+                        <a href="#" class="cta-button" style="margin-top: 1rem; font-size: 0.9rem;">
+                            <i class="fas fa-download"></i> تحميل PDF
+                        </a>
+                    </div>
+                    <div class="catalog-item">
+                        <div class="product-icon">
+                            <i class="fas fa-file-pdf"></i>
+                        </div>
+                        <h3>كاتالوج التوريدات الكهربائية</h3>
+                        <p>دليل شامل لجميع التوريدات والمعدات الكهربائية</p>
+                        <a href="#" class="cta-button" style="margin-top: 1rem; font-size: 0.9rem;">
+                            <i class="fas fa-download"></i> تحميل PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <a href="https://wa.me/962791234567" class="whatsapp-btn" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section about">
+                <h3>مؤسسة رواد الأردن التجارية</h3>
+                <p>رواد في مجال الإنارة والتوريدات الكهربائية، نقدم حلولاً مبتكرة وعالية الجودة لعملائنا في الأردن والمنطقة. نلتزم بالتميز والجودة في كل ما نقدمه.</p>
+            </div>
+            <div class="footer-section contact-info-footer">
+                <h3>تواصل معنا</h3>
+                <p><i class="fas fa-map-marker-alt"></i> الأردن - الرجيب - شارع الأمراء</p>
+                <p><i class="fas fa-phone"></i> +962 6 123 4567</p>
+                <p><i class="fas fa-mobile-alt"></i> +962 79 123 4567</p>
+                <p><i class="fas fa-envelope"></i> info@rowad-jordan.com</p>
+            </div>
+            <div class="footer-section social-links-footer">
+                <h3>تابعنا</h3>
+                <div class="social-icons-footer">
+                    <a href="https://www.facebook.com/yourpage" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/yourpage" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/company/yourcompany" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="mailto:info@rowad-jordan.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 مؤسسة رواد الأردن التجارية. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
