@@ -12,9 +12,7 @@
     <header class="header">
         <div class="nav-container">
             <div class="logo">
-                <div class="logo-icon">
-                    <i class="fas fa-lightbulb"></i>
-                </div>
+                <img src="inf.jpg" alt="Infinity Lighting Logo" class="logo-img">
                 <div class="logo-text">رواد الأردن التجارية</div>
             </div>
             <nav>
@@ -22,7 +20,7 @@
                     <li><a href="index.html" class="nav-link">الرئيسية</a></li>
                     <li><a href="products.html" class="nav-link">منتجاتنا</a></li>
                     <li><a href="catalog.html" class="nav-link">الكاتالوج</a></li>
-                    <li><a href="contact.html" class="nav-link active">اتصل بنا</a></li>
+                    <li><a href="contact.html" class="nav-link">اتصل بنا</a></li>
                 </ul>
             </nav>
             <div style="display: flex; align-items: center; gap: 1rem;">
@@ -39,62 +37,73 @@
     <main class="main-content">
         <section id="contact" class="section active fade-in">
             <div class="container">
-                <h2 class="section-title">اتصل بنا</h2>
+                <h2 class="section-title">تواصل معنا</h2>
+                <p style="text-align: center; max-width: 900px; margin: -2rem auto 3rem; font-size: 1.15rem; color: var(--dark-gray-text);">
+                    نحن هنا لخدمتكم والإجابة على جميع استفساراتكم. لا تترددوا في التواصل معنا عبر الطرق التالية أو ملء النموذج أدناه.
+                </p>
                 <div class="contact-info">
                     <div class="contact-card">
                         <div class="contact-icon">
                             <i class="fas fa-map-marker-alt"></i>
                         </div>
-                        <h3>موقعنا</h3>
+                        <h3>عنوان المكتب الرئيسي</h3>
                         <p>الأردن - الرجيب - شارع الأمراء</p>
+                        <p>مبنى رقم 25 (بجانب دوار الرجيب)</p>
+                        <a href="https://maps.app.goo.gl/YourGoogleMapsLink" target="_blank" class="cta-button" style="margin-top: 1rem; font-size: 0.95rem; padding: 0.7rem 1.5rem;">
+                            <i class="fas fa-map-marked-alt"></i> عرض على الخريطة
+                        </a>
                     </div>
                     <div class="contact-card">
                         <div class="contact-icon">
                             <i class="fas fa-phone"></i>
                         </div>
-                        <h3>هاتف</h3>
-                        <p>+962 6 123 4567</p>
-                        <p>+962 79 123 4567</p>
+                        <h3>أرقام الهواتف</h3>
+                        <p><strong>هاتف:</strong> +962 6 123 4567</p>
+                        <p><strong>موبايل:</strong> +962 79 123 4567</p>
+                        <p>متوفرون من الأحد إلى الخميس، 9 صباحاً - 5 مساءً</p>
                     </div>
                     <div class="contact-card">
                         <div class="contact-icon">
                             <i class="fas fa-envelope"></i>
                         </div>
                         <h3>البريد الإلكتروني</h3>
-                        <p>info@rowad-jordan.com</p>
-                        <p>sales@rowad-jordan.com</p>
+                        <p><strong>للاستفسارات العامة:</strong> <a href="mailto:info@rowad-jordan.com" style="color: var(--gold); text-decoration: none;">info@rowad-jordan.com</a></p>
+                        <p><strong>للمبيعات والدعم:</strong> <a href="mailto:sales@rowad-jordan.com" style="color: var(--gold); text-decoration: none;">sales@rowad-jordan.com</a></p>
+                        <p>نتعهد بالرد على استفساراتكم في أقرب وقت ممكن.</p>
                     </div>
                 </div>
+
                 <div class="contact-form">
-                    <h3 style="margin-bottom: 1.5rem; background: linear-gradient(45deg, var(--infinity-gold), var(--gold)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: bold; text-align: center;">أرسل لنا رسالة</h3>
+                    <h3>أرسل لنا رسالة</h3>
                     <form id="contactForm">
-                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
                             <div class="form-group">
                                 <label for="name">الاسم الكامل</label>
-                                <input type="text" id="name" name="name" required>
+                                <input type="text" id="name" name="name" required placeholder="ادخل اسمك الكامل هنا">
                             </div>
                             <div class="form-group">
                                 <label for="email">البريد الإلكتروني</label>
-                                <input type="email" id="email" name="email" required>
+                                <input type="email" id="email" name="email" required placeholder="example@domain.com">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="phone">رقم الهاتف</label>
-                            <input type="tel" id="phone" name="phone">
+                            <label for="phone">رقم الهاتف (اختياري)</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+962 7XXXXXXXX">
                         </div>
                         <div class="form-group">
                             <label for="subject">الموضوع</label>
-                            <input type="text" id="subject" name="subject" required>
+                            <input type="text" id="subject" name="subject" required placeholder="موضوع رسالتك">
                         </div>
                         <div class="form-group">
                             <label for="message">الرسالة</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <textarea id="message" name="message" rows="7" required placeholder="اكتب رسالتك هنا..."></textarea>
                         </div>
-                        <button type="submit" class="cta-button" style="width: 100%;">
+                        <button type="submit" class="cta-button" style="width: 100%; margin-top: 1rem;">
                             <i class="fas fa-paper-plane"></i> إرسال الرسالة
                         </button>
                     </form>
                 </div>
+
                 <div class="social-links">
                     <a href="https://www.facebook.com/yourpage" class="social-link" target="_blank" aria-label="Facebook">
                         <i class="fab fa-facebook-f"></i>
@@ -109,11 +118,28 @@
                         <i class="fas fa-envelope"></i>
                     </a>
                 </div>
+
+                <div style="margin-top: 4rem; text-align: center;">
+                    <h3 class="section-title" style="margin-bottom: 2rem;">موقعنا على الخريطة</h3>
+                    <p style="font-size: 1.1rem; color: var(--dark-gray-text); margin-bottom: 2rem;">
+                        يمكنك زيارتنا في موقعنا الرسمي خلال ساعات العمل.
+                    </p>
+                    <div style="width: 100%; height: 400px; border: 2px solid var(--gold); border-radius: 15px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3384.664426577366!2d35.9181180848529!3d31.953963481223933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151b5e39e5b2a095%3A0x7d0a5f0e3f0d0e0!2sAmman%2C%20Jordan!5e0!3m2!1sen!2sjo!4v1678901234567!5m2!1sen!2sjo"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                    <p style="font-size: 0.85rem; color: var(--dark-gray-text); margin-top: 1rem;">
+                        <i class="fas fa-info-circle" style="color: var(--gold); margin-left: 0.5rem;"></i>
+                        لتعديل الخريطة، استبدل رابط الـ `src` الخاص بـ `iframe` برابط الخريطة الخاصة بموقعكم من خرائط جوجل.
+                    </p>
+                </div>
             </div>
         </section>
     </main>
 
-    <a href="https://wa.me/962791234567" class="whatsapp-btn" target="_blank">
+    <a href="https://wa.me/962791234567" class="whatsapp-btn" target="_blank" aria-label="WhatsApp Chat">
         <i class="fab fa-whatsapp"></i>
     </a>
 
